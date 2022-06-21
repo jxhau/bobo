@@ -1,0 +1,38 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq
+
+responses:
+  utter_greet:
+  - text: "Good day! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.pinimg.com/originals/6f/0b/3b/6f0b3baa01e2136b2e2d93709e622e2c.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "My name is BoBo. Nice to meet you!"
+
+  utter_faq:
+  - text: "Check this page for ecommerce templates https://go-smac.com/ecommerce"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
